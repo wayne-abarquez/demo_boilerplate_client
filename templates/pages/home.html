@@ -1,0 +1,13 @@
+<!-- Fixed Top Navbar -->
+<div ng-include="'templates/partials/_top_nav.html'"></div>
+
+<div id="index-container"> <!--  ng-controller="indexController as indexCtl" -->
+    <div ng-controller="gmapController as gmapCtl">
+        <!-- map canvas dimensions will be computed during map initialization -->
+        <div id="map-canvas"></div>
+
+        <!-- Map Drawing Panel -->
+        <div ng-include="'templates/partials/_layer_panel.html'"></div>
+        <div ng-include="'templates/partials/_layer_panel_controls.html'"></div>
+    </div>
+</div>
